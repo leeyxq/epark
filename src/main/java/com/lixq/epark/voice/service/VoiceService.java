@@ -29,6 +29,13 @@ public class VoiceService {
         this.voiceConfig = voiceConfig;
     }
 
+    /**
+     * 绑定小号
+     *
+     * @param middleNumber 小号
+     * @param bindNumber   要绑定的真实手机号
+     * @return
+     */
     public VoiceResponseResult bindWithAx(String middleNumber, String bindNumber) {
         PrivacyBindBodyAx bindBodyAx = new PrivacyBindBodyAx();
         /** 设定绑定的隐私小号*/
@@ -55,6 +62,13 @@ public class VoiceService {
         return sendRequest("middleNumberAX", middleNumber, bindNumber, JSON.toJSONString(bindBodyAx));
     }
 
+    /**
+     * 解绑小号
+     *
+     * @param middleNumber 小号
+     * @param bindNumber   要解绑的真实手机号
+     * @return
+     */
     public VoiceResponseResult unBindWithAx(String middleNumber, String bindNumber) {
         PrivacyUnbindBody unbindBody = new PrivacyUnbindBody();
         /** 设置需要解绑的小号*/
