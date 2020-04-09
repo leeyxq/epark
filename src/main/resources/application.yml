@@ -1,0 +1,5 @@
+
+winnerlook:
+  url: https://101.37.133.245:11008/voice/1.0.0/{0}/{1}/{2}
+  appId: 961642
+  token: 06e247586cfa4b4395675dfd644ae213
